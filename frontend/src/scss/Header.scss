@@ -1,0 +1,175 @@
+@media (max-width: 800px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+
+        .fa-bars {
+            height: 0;
+            margin: 5px;
+            font-size: 1.5rem;
+            color: var(--blue-to-white);
+        }
+
+        .menuBar {
+            position: absolute;
+            top: 9%;
+            width: 27%;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2px 0;
+            border: 2px solid var(--blue);
+            background-color: var(--white);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+            a {
+                margin: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                border-bottom: 1px solid var(--slate-200);
+
+                &:last-child {
+                    border: none;
+                }
+
+                i {
+                    margin-bottom: 3px;
+                    font-size: 1.4rem;
+                    color: var(--blue);
+                }
+
+                p {
+                    margin-bottom: 5px;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    color: var(--blue);
+                    font-family: 'Marcellus', serif;
+                }
+            }
+        }
+
+        .settingsBar {
+            position: absolute;
+            top: 9%;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            background-color: var(--white);
+            border: 2px solid var(--blue);
+            z-index: 1000;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+            a, p {
+                display: flex;
+                text-align: center;
+                margin: 10px 10px;
+                font-size: 1.1rem;
+                font-weight: bold;
+                color: var(--blue);
+                font-family: 'Marcellus', serif;
+            }
+
+            p {
+                color: var(--red);
+            }
+
+            .switch {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 10px 0;
+                padding-left: 10px;
+                font-size: 1.1rem;
+                font-weight: bold;
+                color: var(--blue);
+                font-family: 'Marcellus', serif;
+
+                .settInput {
+                    position: relative;
+                    transition: .5s;
+                    border-radius: 20px;
+                    -webkit-appearance: none;
+                    width: 50px;
+                    height: 20px;
+                    margin-left: 10px;
+                    background-color: var(--slate-500);
+                    box-shadow: inset 2px 2px 10px var(--slate-400);
+
+                    &:checked {
+                        background: var(--blue);
+                    }
+
+                    &:before {
+                        position: absolute;
+                        top: -1px;
+                        left: 0;
+                        width: 20px;
+                        height: 20px;
+                        content: '';
+                        transition: .5s;
+                        border-radius: 50%;
+                        background-color: var(--white);
+                        transform: scale(1.1);
+                        border: 1px solid var(--slate-400);
+                    }
+
+                    &:checked:before {
+                        left: 30px;
+                    }
+                }
+            }
+        }
+
+        .activeMenuBar {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+
+        .user {
+            text-align: end;
+
+            .logo {
+                width: 55%;
+                margin: -12px -12px 0 0;
+                display: inline-block;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .userName {
+                display: flex;
+                gap: .5rem;
+                align-items: center;
+                justify-content: flex-end;
+
+                p {
+                    font-family: 'Delius', cursive;
+                    font-size: 1.3rem;
+                    font-weight: bold;
+                    color: var(--blue-to-white);
+                }
+
+                .avatar {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40px;
+                    height: 40px;
+                    border: 2px solid var(--red);
+                    border-radius: 50%;
+                    background-color: var(--white);
+
+                    i {
+                        font-size: 2rem;
+                        color: var(--blue);
+                    }
+                }
+            }
+        }
+    }
+}

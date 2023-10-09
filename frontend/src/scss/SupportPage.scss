@@ -1,0 +1,26 @@
+@media (max-width: 800px) {
+    .SupportPage {
+        margin-top: 60px;
+        font-family: 'Noto Sans Syloti Nagri', sans-serif;
+
+        p {
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: var(--blue);
+        }
+    
+        a {
+            display: block;
+            margin-top: 50px;
+            font-size: 1.1rem;
+            text-align: center;
+            text-decoration: underline;
+
+            i {
+                font-size: 1.3rem;
+                margin-right: 5px;
+            }
+        }
+    }
+}

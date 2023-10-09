@@ -1,0 +1,120 @@
+@media (max-width: 800px) {
+    .AddCardPage {
+        form {
+            margin-top: -5px;
+            text-align: center;
+            z-index: -1;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 1.4rem;
+            color: var(--black-to-red);
+            font-family: 'Dekko', cursive;
+        }
+
+        input {
+            width: 100%;
+            padding-bottom: 3px;
+            font-size: 1rem;
+            background: none;
+            font-family: 'Noto Sans Syloti Nagri', sans-serif;
+            border-bottom: 2px solid var(--blue);
+        }
+
+        .colors {
+            margin-top: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: var(--black-to-red);
+            font-family: 'Noto Sans Syloti Nagri', sans-serif;
+
+            .content {
+                display: flex;
+                flex-wrap: wrap;
+                gap: .4rem;
+                margin-top: 10px;
+
+                div {
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid var(--black);
+                }
+            }
+        }
+
+        .card {
+            margin: 10px 0 0 0;
+            padding: 15px 15px 25px 15px;
+            border-radius: 30px;
+            border: 1px solid;
+            
+            .heading {
+                display: flex;
+                justify-content: space-between;
+    
+                p {
+                    width: 100%;
+                    text-align: left;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    font-family: 'Amethysta', serif;
+                }
+    
+                img {
+                    margin-top: -5px;
+                    width: 35%;
+                }
+            }
+    
+            .chip {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin: 25px 0 25px 0;
+    
+                img {
+                    width: 15%;
+                    border: 1px solid;
+                    border-radius: 5px;
+                }
+    
+                .balans {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-left: 10px;
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    font-family: 'Advent Pro', sans-serif;
+    
+                    span {
+                        font-family: 'Delius', cursive;
+                    }
+                }
+            }
+    
+            .code {
+                display: flex;
+                justify-content: space-between;
+    
+                .chipCode {
+                    font-size: 1.3rem;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    font-family: 'Faustina', serif;
+                }
+    
+                .nfcImg {
+                    margin-right: 15px;
+                    width: 9%;
+                }
+            }
+        }
+
+        .btn {
+            margin-top: 12px;
+            color: var(--white-to-blue);
+            background: var(--blue-to-white);
+        }
+    }
+}

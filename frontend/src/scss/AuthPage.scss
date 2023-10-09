@@ -1,0 +1,128 @@
+@media (max-width: 800px) {
+    .AuthPage {
+        .logo-auth {
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        .logo-auth img {
+            width: 100%;
+        }
+
+        form {
+            text-align: center;
+
+            p {
+                text-align: left;
+                font-weight: bold;
+                color: var(--blue);
+                font-family: 'Delius', cursive;
+            }
+
+            .userName,
+            .userEmail {
+                width: 100%;
+                margin: 10px 0;
+                padding-bottom: 3px;
+                background: none;
+                font-size: 1.1rem;
+                border-bottom: 2px solid var(--blue);
+                font-family: 'Noto Sans Syloti Nagri', sans-serif;
+            }
+
+            .pinBox {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 10px 0;
+                padding-bottom: 3px;
+                border-bottom: 2px solid var(--blue);
+
+                input {
+                    width: 100%;
+                    background: none;
+                    font-size: 1.1rem;
+                    font-family: 'Noto Sans Syloti Nagri', sans-serif;
+                    letter-spacing: 1px;
+                }
+
+
+                .loginForm input[type='submit'] {
+                    width: 40%;
+                    margin: 20px auto;
+                    padding: 5px 0;
+                    font-weight: bold;
+                    font-size: 1.1rem;
+                    border-radius: 10px;
+                    font-family: 'Noto Sans Syloti Nagri', sans-serif;
+                }
+            }
+
+            .policy {
+                display: flex;
+                align-items: flex-start;
+                margin-top: 20px;
+
+                input[type=checkbox] {
+                    display: grid;
+                    width: 1.3rem;
+                    height: 1.3rem;
+                    margin: 5px 8px 0 0;
+                    padding: 10px;
+                    appearance: none;
+                    font: inherit;
+                    font-size: 1.3rem;
+                    border-radius: 5px;
+                    place-content: center;
+                    background-color: var(--white);
+                    transform: translateY(-0.075em);
+                    border: 1.5px solid var(--blue);
+
+                    &::before {
+                        content: '';
+                        width: 0.65em;
+                        height: 0.65em;
+                        transform: scale(0);
+                        transform-origin: center;
+                        transition: 120ms transform linear;
+                        box-shadow: inset 1em 1em var(--blue);
+                        clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+                    }
+
+                    &:checked::before {
+                        transform: scale(1);
+                    }
+                }
+
+                p {
+                    padding: 2px 5px;
+                    font-weight: 600;
+                }
+
+                a {
+                    color: var(--blue);
+                }
+            }
+
+            .btnActive {
+                margin: 20px;
+                color: var(--white);
+                background-color: var(--blue);
+            }
+
+            .btnVisible {
+                margin: 20px;
+                color: var(--slate-500);
+                background-color: var(--slate-300);
+                border-color: var(--slate-300);
+            }
+        }
+        
+        .haveAccount {
+            display: block;
+            text-align: end;
+            color: var(--blue);
+            font-family: 'Noto Sans Syloti Nagri', sans-serif;
+        }
+    }
+}

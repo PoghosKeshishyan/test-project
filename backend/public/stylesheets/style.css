@@ -1,0 +1,23 @@
+body {
+  margin: 50px 80px;
+  font-family: 'Arial';
+}
+
+.logo {
+  width: 300px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: -10px;
+}
+
+.content p {
+  font-size: 25px;
+}
+
+.content .logo_black {
+  width: 160px;
+}

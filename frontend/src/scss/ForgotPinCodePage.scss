@@ -1,0 +1,49 @@
+@media (max-width: 800px) {
+    .ForgotPinCode {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        form {
+            margin-top: 40px;
+
+            p {
+                padding: 15px;
+                line-height: 40px;
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: var(--blue);
+                font-family: 'Delius', cursive;
+            }
+
+            span {
+                display: block;
+                margin: 5px 0 10px 0;
+                font-weight: bold;
+                color: var(--blue);
+                font-family: 'Delius', cursive;
+            }
+
+            input[type=email] {
+                width: 100%;
+                background: none;
+                font-size: 1.1rem;
+                margin: 10px 0 30px;
+                padding-bottom: 3px;
+                border-bottom: 2px solid var(--blue);
+                font-family: 'Noto Sans Syloti Nagri', sans-serif;
+            }
+
+            .btnActive {
+                color: var(--white);
+                background-color: var(--blue);
+            }
+        
+            .btnVisible {
+                color: var(--slate-500);
+                background-color: var(--slate-300);
+            }
+        }
+    }
+}

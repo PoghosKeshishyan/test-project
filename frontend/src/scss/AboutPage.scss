@@ -1,0 +1,46 @@
+@media (max-width: 800px) {
+    .AboutPage {
+        margin-top: 10px;
+        padding: 10px 0;
+
+        p {
+            text-align: justify;
+            font-weight: 600;
+            color: var(--blue);
+            font-family: 'Delius', cursive;
+            
+            &.aboutText {
+                font-size: 1rem;
+                padding-bottom: 15px;
+            }
+        }
+
+        .shareApp {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+
+            p {
+                font-size: 1rem;
+            }
+
+            .shareBtn {
+                background: var(--slate-400);
+                text-align: center;
+                padding: 5px 10px;
+                border-radius: 6px;
+                color: var(--white);
+
+                i {
+                    font-size: 1rem;
+                }
+
+                p {
+                    color: var(--white);
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+}

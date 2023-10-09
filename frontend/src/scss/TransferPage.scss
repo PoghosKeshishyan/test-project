@@ -1,0 +1,119 @@
+@media (max-width: 800px) {
+    .TransferPage {
+        text-align: center;
+
+        .contorolBtns {
+            display: flex;
+            align-items: center;
+            justify-content: center;            
+            gap: .3rem;
+            margin: 20px 0 13px 0;
+
+            button {
+                background: none;
+                padding: 5px 5px;
+                border-radius: 5px;
+                color: var(--black-to-white);
+                font-family: 'Noto Sans Syloti Nagri', sans-serif; 
+
+                &.active {
+                    background: var(--slate-500);
+                    color: var(--white);
+                }
+            }
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 5px 0;
+            padding: 10px 0 15px 0;
+            border-bottom: 2px dotted var(--blue);
+
+            .text {
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: var(--blue);
+                font-family: 'Delius', cursive;
+            }
+        
+            .selectTransfer {
+                width: 220px;
+                padding: 4px 50px 4px 5px;
+                font-size: 1.1rem;
+                font-weight: 600;
+                color: var(--red);
+                border-radius: 5px;
+                font-family: 'Delius', cursive;
+                border: 2px solid var(--red);
+                background-color: var(--white);
+            }
+
+            .inputTransfer {
+                width: 220px;
+                padding: 4px 4px 4px 50px;
+                font-size: 1.1rem;
+                text-align: end;
+                font-weight: 600;
+                color: var(--red);
+                font-family: 'Delius', cursive;
+                background-color: var(--white);
+                border: 2px solid var(--red);
+                border-radius: 5px;
+            }
+        }
+
+        .btn {
+            margin-top: 20px;
+            color: var(--white-to-blue);
+            background-color: var(--blue-to-white);
+        }
+
+
+        .transferToFriends {
+            margin: 10px 0 0 0;
+
+            p {
+               font-family: 'Noto Sans Syloti Nagri', sans-serif; 
+               font-size: 1.2rem;
+               font-weight: bold;
+               color: var(--black-to-white);
+            }
+
+            input{ 
+                border: 1px solid var(--blue);
+                margin: 20px 0 10px 0;
+                font-size: 1rem;
+                padding: 5px;
+                border-radius: 6px;
+                margin-left: 5px;
+            }
+
+            .btn {
+                padding: 3.5px 10px;
+            }
+        }
+
+        .users {
+            height: 245px;
+            overflow-y: auto;
+
+            .user {
+                margin: 5px 0;
+                padding-bottom: 5px;
+                text-align: left;
+                border-bottom: 1px solid var(--slate-500);
+                font-family: 'Noto Sans Syloti Nagri', sans-serif; 
+                color: var(--black-to-white);        
+
+                .btn {
+                    margin: 3px 0;
+                    padding: 0 10px;
+                    font-size: .9rem;
+                }
+            }
+  
+        }
+    }
+}

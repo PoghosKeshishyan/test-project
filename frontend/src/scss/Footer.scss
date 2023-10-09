@@ -1,0 +1,31 @@
+@media (max-width: 800px) {
+    footer {
+        position: absolute;
+        bottom: 5px;
+        left: 15px;
+        right: 15px;
+
+        .bottomNav {
+            display: flex;
+            justify-content: space-around;
+
+            a {
+                text-align: center;
+
+                i {
+                    margin-bottom: 5px;
+                    font-size: 1.6rem;
+                    color: var(--blue);
+                }
+
+                p {
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    color: var(--blue);
+                    font-family: 'Marcellus', serif;
+                }
+            }
+        }
+
+    }
+}

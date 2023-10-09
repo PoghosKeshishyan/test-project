@@ -1,0 +1,141 @@
+@media (max-width: 800px) {
+    .HistoryPage {
+        margin-top: 5px;
+
+        /* -------------- edit tools -------------- */
+        .editTools {
+            text-align: end;
+
+            i {
+                font-size: 1.2rem;
+                margin: 8px 0px 5px 10px;
+            }
+
+            .fa-pen-to-square {
+                color: var(--blue-to-white);
+            }
+            
+            .fa-trash {
+                color: var(--red);
+                margin-right: 5px;
+            }
+        }
+
+        /* -------------- card -------------- */
+        .card {
+            margin: 8px 0 17px 0;
+            padding: 20px 20px 25px 20px;
+            border-radius: 30px;
+
+            .heading {
+                display: flex;
+                justify-content: space-between;
+
+                .title {
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    font-family: 'Amethysta', serif;
+                }
+
+                img {
+                    margin-top: -5px;
+                    width: 40%;
+                }
+        
+            }
+    
+            .chip {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin: 25px 0 25px 0;
+
+                img {
+                    width: 13%;
+                    border: 1px solid;
+                    border-radius: 5px;
+                }
+
+                .balans {
+                    margin-left: 10px;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    font-family: 'Advent Pro', sans-serif;
+
+                    span {
+                        font-family: 'Delius', cursive;
+                        margin-left: 6px;
+                    }
+                }
+            }
+
+            .code {
+                display: flex;
+                justify-content: space-between;
+    
+                .chipCode {
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    font-family: 'Faustina', serif;
+                }
+
+                .nfcImg {
+                    margin-right: 15px;
+                    width: 7%;
+                }
+            }
+        }
+
+        /* -------------- history -------------- */
+        .history {
+            .heading {
+                margin-bottom: 5px;
+                padding: 5px 10px;
+                font-family: 'Marcellus', serif;
+                font-weight: 600;
+                font-size: 1.3rem;
+                text-align: center;
+                color: var(--black);
+                border-radius: 15px;
+                background-color: var(--sky-alpha);
+                box-shadow: -.7rem -.4rem 1.1rem var(--slate-400);
+            }
+
+            .box-container {
+                max-height: 150px;
+                overflow-y: scroll;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+        
+                .box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 5px 0;
+                    padding: 9px 10px;
+                    border-radius: 15px;
+                    background-color: var(--sky-alpha);
+
+                    img {
+                        width: 7%;
+                        margin-right: 10px;
+                    }
+            
+                    .rotateArrow {
+                        transform: rotate(180deg);
+                    }
+
+                    p {
+                        font-weight: 600;
+                        font-size: .9rem;
+                        font-family: 'Marcellus', serif;
+                    }
+                }
+            }
+    
+        } 
+    }
+}

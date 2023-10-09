@@ -1,0 +1,172 @@
+@media (max-width: 800px) {
+    .HomePage {
+
+        h2 {
+            margin: 5px 0 30px 0;
+            font-family: 'Adamina', serif;
+            color: var(--black-to-blue);
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            word-spacing: 6px;
+
+            span {
+                font-family: 'Noto Sans Syloti Nagri', sans-serif;
+            }
+        }
+
+        .swiper-wrapper {
+            height: 14rem;
+
+            .swiper-slide {
+                padding: 15px;
+                max-height: 13rem;
+                border-radius: 20px;
+
+                .heading {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .title {
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        font-family: 'Amethysta', serif;
+                    }
+
+                    img {
+                        margin-top: -5px;
+                        width: 45%;
+                    }
+                }
+
+                .chip {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    margin: 30px 0;
+
+                    img {
+                        width: 13%;
+                        border: 1px solid;
+                        border-radius: 5px;
+                    }
+
+                    .balans {
+                        margin-left: 10px;
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        font-family: 'Advent Pro', sans-serif;
+
+                        span {
+                            font-family: 'Delius', cursive;
+                        }
+                    }
+                }
+
+                .code {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .chipCode {
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        letter-spacing: 1px;
+                        font-family: 'Faustina', serif;
+                    }
+
+                    .nfcImg {
+                        margin-right: 10px;
+                        width: 8%;
+                    }
+                }
+            }
+        }
+
+        /* -------------- newCard -------------- */
+        .addCard {
+            width: 60%;
+            margin: 35px auto 0 auto;
+            padding: 8px 10px;
+            border-radius: 20px;
+            text-align: center;
+            font-weight: bold;
+            font-family: serif;
+            background-color: var(--sky-alpha);
+            border: 1px solid var(--black-to-white);
+            box-shadow: 4px 6px var(--slate-400);
+
+            .heading {
+                display: flex;
+                justify-content: space-between;
+
+                .title {
+                    font-size: .6rem;
+                    font-family: 'Amethysta', serif;
+                }
+
+                img {
+                    margin-top: -3px;
+                    width: 35%;
+                }
+            }
+
+            .chip {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin: 10px 0 18px 0;
+                font-family: 'Advent Pro', sans-serif;
+
+                img {
+                    width: 10%;
+                    border: 1px solid;
+                    border-radius: 5px;
+                    margin-right: 5px;
+                }
+
+                
+                .balans {
+                    margin-left: 2px;
+                    font-size: .8rem;
+                    font-weight: 600;
+                    font-family: 'Advent Pro', sans-serif;
+
+                    span {
+                        font-family: 'Delius', cursive;
+                    }
+                }
+            }
+
+            .code {
+                display: flex;
+                justify-content: space-between;
+                margin-top: -10px;
+
+                .chipCode {
+                    margin-top: 8px;
+                    font-size: .6rem;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    font-family: 'Faustina', serif;
+                }
+
+                .nfcImg {
+                    width: 6%;
+                    height: 10%;
+                    margin-right: 2px;
+                }
+            }
+        }
+
+        .addBtn {
+            font-family: 'Advent Pro', sans-serif;
+            font-weight: bold;
+        }
+
+        .addCard:active {
+            background-color: var(--sky-alpha-dark);
+            box-shadow: 0px 0px var(--slate-400);
+            transform: translateY(5px);
+        }
+    }
+}

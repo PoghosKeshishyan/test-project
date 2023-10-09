@@ -1,0 +1,82 @@
+@media (max-width: 800px) {
+    .ProfileEditPage {
+        text-align: center;
+
+        .title {
+            margin-top: 5px;
+            color: var(--red);
+            font-weight: bold;
+            text-align: left;
+            font-family: 'Noto Sans Syloti Nagri', sans-serif;
+        }
+
+        input {
+            width: 100%;
+            font-weight: 600;
+            font-size: 1rem;
+            margin: 5px 0;
+            background: none;
+            color: var(--black-to-red);
+            font-family: 'Noto Sans Syloti Nagri', sans-serif;
+        }
+
+        .name {
+            border-bottom: 2px dotted;  
+            padding-bottom: 5px;
+        }
+
+        .pinBox {
+            display: flex;
+            border-bottom: 2px dotted;  
+
+            input {
+                letter-spacing: 3px;
+                color: var(--black-to-red);
+            }
+        }
+
+        .profileAvatar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .avatar {
+                margin-top: 5px;
+                padding: 5px;
+                border-radius: 50%;
+                background-color: var(--white);
+                border: 2px solid var(--red);
+
+                i {
+                    color: var(--blue);
+                    font-size: 2rem;
+                }
+            }
+        }
+    
+        .icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 10px 0;
+
+            i {
+                font-size: 1.5rem;
+                margin: 5px;
+                padding: 3px;
+                color: var(--white);
+                background: var(--blue);
+                border: 2px solid var(--slate-600);
+                box-shadow: .2rem .3rem .5rem var(--slate-400);
+            }
+        
+        }
+
+        .btn {
+            margin-top: 10px;
+            color: var(--white-to-blue);
+            background: var(--blue-to-white);
+        }
+    }
+}

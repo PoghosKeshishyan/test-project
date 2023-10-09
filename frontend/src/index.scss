@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Advent+Pro:wght@400;500;600;700&family=Amethysta&family=Dekko&family=Delius&family=Faustina:wght@400;500;600&family=Marcellus&family=Noto+Sans+Syloti+Nagri&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all .3s linear;
+
+    // used in the program FONTS
+    /* font-family: 'Adamina', serif; */
+    /* font-family: 'Advent Pro', sans-serif; */
+    /* font-family: 'Amethysta', serif; */
+    /* font-family: 'Dekko', cursive; */
+    /* font-family: 'Delius', cursive; */
+    /* font-family: 'Marcellus', serif; */
+    /* font-family: 'Noto Sans Syloti Nagri', sans-serif; */
+    /* font-family: 'Faustina', serif; */
+}
+
+:root {
+    --red: rgb(239 68 68);
+    --blue: rgb(37 99 235);
+    --blue2: rgb(0, 0, 255);
+    --orange: rgb(255 163 0);
+    --green: rgb(0, 150, 136);
+    --white: rgb(255 255 255);
+    --black: rgb(0 0 0);
+    --slate-200: rgb(226 232 240);
+    --slate-300: rgb(203 213 225);
+    --slate-400: rgb(148 163 184);
+    --slate-500: rgb(100 116 139);
+    --slate-600: rgb(71 85 105);
+    --sky-alpha: rgba(184, 250, 240, 0.717);
+    --sky-alpha-dark: rgb(125 211 252);
+
+    // on active 
+    --black-to-white: rgb(0 0 0);
+    --black-to-red: rgb(0 0 0);
+    --black-to-blue: rgb(0 0 0);
+    --blue-to-white: rgb(37 99 235);
+    --red-to-white: rgb(239 68 68);
+    --white-to-blue: rgb(255 255 255);
+}
+
+body {
+    background-image: url('../public/images/background.png');
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+    /* ------- user select > disabled ------- */
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body.active {
+    background-color: var(--black);
+    --black-to-white: rgb(255 255 255);
+    --black-to-red: rgb(239 68 68);
+    --black-to-blue: rgb(37 99 235);
+    --blue-to-white: rgb(255 255 255);
+    --red-to-white: rgb(255 255 255);
+    --white-to-blue: rgb(37 99 235);
+}
+
+@media (min-width: 800px) {
+    body {
+        background: none;
+    }
+
+    #root {
+        display: none;
+    }
+
+    .inComputer {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 1.6rem;
+        font-family: Arial, Helvetica, sans-serif;
+
+        p {
+            padding-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .inComputer {
+        display: none;
+    }
+
+    .App {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 20px 10px 20px;
+    }
+
+    .fa-house,
+    .fa-circle-left,
+    .fa-circle-left {
+        position: absolute;
+        top: 70px;
+        left: 20px;
+        font-size: 1.3rem;
+        color: var(--blue-to-white);
+    }
+
+    .fa-circle-left {
+        top: 50px;
+    }
+
+    .btn {
+        padding: 5px 25px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        border-radius: 6px;
+        font-family: 'Noto Sans Syloti Nagri', sans-serif;
+        border: 2px solid var(--blue);
+    }
+
+    /* ---------------- modal ---------------- */
+    .modal {
+        display: none;
+
+        .modalBackground {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 1000;
+            background-color: rgba(0, 0, 0, 0.705);
+        }
+
+        .modalBody {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            text-align: center;
+            top: 200px;
+            left: 0;
+            right: 0;
+            z-index: 1001;
+            margin: 0 20px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: var(--white);
+            box-shadow: .3rem .5rem 1rem var(--slate-500);
+
+            p {
+                color: var(--blue);
+                font-size: 1.2rem;
+                font-weight: bold;
+                letter-spacing: 1px;
+                word-spacing: 1px;
+                font-family: 'Marcellus', serif;
+            }
+
+            button,
+            a {
+                margin: 20px 5px 12px 5px;
+                padding: 5px 20px;
+                font-size: 1.1rem;
+                font-weight: 600;
+                border-radius: .3rem;
+                color: var(--white);
+                font-family: 'Marcellus', serif;
+            }
+
+            .modal_btn_yes {
+                background-color: var(--blue);
+            }
+
+            .modal_btn_cancel {
+                background-color: var(--red);
+            }
+        }
+    }
+
+    .activeModal {
+        display: block;
+    }
+}
